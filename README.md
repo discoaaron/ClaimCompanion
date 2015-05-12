@@ -1,5 +1,6 @@
 # ClaimCompanion
-A little Claim Companion HTML/js/CSS app I hacked together.
+A little Claim Companion html/js/css app I hacked together (hacked being the keyword!).
+It's online at http://claimcompanion.azurewebsites.net/ 
 
 The use case 
  - A claims Assessor will assess claims in differernt streams on a daily basis
@@ -11,4 +12,7 @@ The use case
 Note: I built this in a couple of hours so it's a bit hacky! This being said any critiques feel free to enlighten me! I kind of feel like refectoring for my own pease of mind!
 
 # Known Bugs
+ - None (this means there are many unknown!!)
+
+# Fixed Bugs
  - The very first time it is opened it will set all values to empty string, will fix!
