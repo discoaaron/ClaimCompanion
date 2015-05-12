@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Claim Companion</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="script.js"/></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container theme-showcase" role="main">
+			<div class="col-sm-8">
+				<h2>Claim Companion</h2>
+				<table class="table table-bordered center">
+					<tr>
+						<td></td>
+						<td>Cancellation</td>
+						<td>Outbound Medical</td>
+						<td>Inbound Medical</td>
+						<td>Property/ Other</td>
+					</tr>
+					<tr>
+						<td>Paid</td>
+						<td>
+							<button id="CNPaid" type="button" class="btn btn-success buttonText" onclick="DoWorkSon('CNPaid')">0</button>
+						</td>
+						
+						<td>
+							<button id="OBPaid"type="button" class="btn btn-success buttonText" onclick="DoWorkSon('OBPaid')">Pay</button>
+						</td>
+						<td>
+							<button id="IBPaid" type="button" class="btn btn-success buttonText" onclick="DoWorkSon('IBPaid')">Pay</button>
+						</td>
+						<td>
+							<button id="POPaid" type="button" class="btn btn-success buttonText" onclick="DoWorkSon('POPaid')">Pay</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Declined</td>
+						<td>
+							<button id="CNDecl" type="button" class="btn btn-danger buttonText" onclick="DoWorkSon('CNDecl')">Decline</button>
+						</td>
+						<td>
+							<button id="OBDecl" type="button" class="btn btn-danger buttonText" onclick="DoWorkSon('OBDecl')">Decline</button>
+						</td>
+						<td>
+							<button id="IBDecl" type="button" class="btn btn-danger buttonText" onclick="DoWorkSon('IBDecl')">Decline</button>
+						</td>
+						<td>
+							<button id="PODecl" type="button" class="btn btn-danger buttonText" onclick="DoWorkSon('PODecl')">Decline</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Deferred</td>
+						<td>
+							<button id="CNDef" type="button" class="btn btn-warning buttonText" onclick="DoWorkSon('CNDef')">Defer</button>
+						</td>
+						<td>
+							<button id="OBDef" type="button" class="btn btn-warning buttonText" onclick="DoWorkSon('OBDef')">Defer</button>
+						</td>
+						<td>
+							<button id="IBDef" type="button" class="btn btn-warning buttonText" onclick="DoWorkSon('IBDef')">Defer</button>
+						</td>
+						<td>
+							<button id="PODef" type="button" class="btn btn-warning buttonText" onclick="DoWorkSon('PODef')">Defer</button>
+						</td>
+					</tr>
+					<tr>
+						<td>On Hold</td>
+						<td>
+							<button id="CNHold" type="button" class="btn btn-default buttonText" onclick="DoWorkSon('CNHold')">Hold</button>
+						</td>
+						<td>
+							<button id="OBHold" type="button" class="btn btn-default buttonText" onclick="DoWorkSon('OBHold')">Hold</button>
+						</td>
+						<td>
+							<button id="IBHold" type="button" class="btn btn-default buttonText" onclick="DoWorkSon('IBHold')">Hold</button>
+						</td>
+						<td>
+							<button id="POHold" type="button" class="btn btn-default buttonText" onclick="DoWorkSon('POHold')">Hold</button>
+						</td>
+						
+					</tr>
+				</table>
+				<h2>
+					Total:<label class="label label-info" id="TotalNumber">0</label>
+					Target:<label class="label label-info" id="GrandTotal">0%</label>
+					<button id="Reset" type="button" data-toggle="confirmation" class="rightBrah btn btn-info" onclick="ResetDataWithConfirmation()">Reset</button>
+				</h2>
+				<div class="progress">
+					<div id="progressBar" class="progress-bar progress-bar-info" style="width:0%">
+						<span class="sr-only"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

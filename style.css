@@ -1,0 +1,25 @@
+button
+{
+	width: 75px;
+}
+
+h3
+{
+	display:inline;
+}
+
+.rightBrah
+{
+	float:right;
+}
+
+.buttonText
+{
+	font-size: 125%;
+	font-weight: 700;
+}
+
+.center
+{
+	float:center;
+}
