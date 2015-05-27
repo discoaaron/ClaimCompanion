@@ -70,7 +70,7 @@ function CalculateTotalPercentage(type)
 			total += 100/9;
 			break;
 		case 'CN':
-			total += 100/7;
+			total += 100/6;
 			break;
 		default:
 			total = 'dafaq did you get here?'
