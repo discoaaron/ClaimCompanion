@@ -13,7 +13,17 @@
 // Load the stored totals in the view
 window.addEventListener('load', function() 
 {
-	ResetView();
+	// If this is the first time loading the page the localStorage values
+	// will not have been set, so initialise the data, then reset view 
+	// Otherwise only reset the view
+	if (localStorage.getItem('TotalNumber') == null)
+	{
+		ResetData();
+	}
+	else
+	{
+		ResetView();	
+	}
 });
 
 function DoWorkSon(type)
@@ -81,11 +91,6 @@ function CalculateTotalPercentage(type)
 
 function ResetView() 
 {
-	if (localStorage.getItem('TotalNumber') != 0)
-	{
-		ResetData();
-	}
-	
 	$('#IBPaid').text(localStorage.getItem('IBPaid'));
 	$('#IBDecl').text(localStorage.getItem('IBDecl'));
 	$('#IBDef').text(localStorage.getItem('IBDef'));
@@ -173,4 +178,3 @@ function checkIfHold(type)
 	}
 	return false;
 }
-
